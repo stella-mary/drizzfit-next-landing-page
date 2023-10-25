@@ -1,0 +1,107 @@
+.choose {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  height: 100vh;
+  /* padding-left: 5%; */
+  gap: 50px;
+}
+
+.imageContainer2 {
+  width: 100%; 
+  height: 30vh;
+  background-image: url("/image/choose6.png");
+  /* background-position: center; */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+
+
+.chooseMain{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+}
+
+.img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridItem {
+  width: 100%;
+}
+
+.h1{
+  font-family: 'Telegraf UltraBold 800';
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 7rem;
+}
+
+.para {
+  font-family: 'Telegraf Regular 400';
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.imageContainer1 {
+  width: 100%; 
+  height: 100vh;
+background-image: url("/image/choose.png");
+background-position: center;
+background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .choose {
+      grid-template-columns: 1fr; 
+      gap: 20px; 
+       }
+
+  .chooseMain {
+      padding-left: 5%; 
+  }
+
+  .h1 {
+      font-size: 28px; 
+      margin-top: 3rem; 
+  }
+
+  .para {
+      font-size: 14px; 
+      margin-top: 15px; 
+  }
+
+  .imageContainer1 {
+      height: 50vh; 
+  }
+
+  .imageContainer2 {
+      height: 25vh; 
+  }
+
+  .img {
+      margin-top: 10px; 
+  }
+
+  .img1,
+  .img2 {
+      justify-content: space-evenly; 
+      align-items: center;
+  }
+}

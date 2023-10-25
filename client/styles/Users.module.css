@@ -1,0 +1,165 @@
+.usersSubSub {
+  background-color: #fee600;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cardTop {
+  width: 100%;
+  display: flex;
+  margin-top: -5rem;
+  justify-content: center; 
+  align-items: center;
+}
+
+.usersImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.cardBottom {
+  margin-top: 20px; 
+  text-align: left; 
+}
+
+.usersMain {
+  display: grid;
+  width: 100%;
+  gap: 30px;
+  padding: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.users {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h2 {
+  font-family: 'Telegraf UltraBold 800';
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.h3 {
+  font-family: 'Telegraf Regular 400';
+  font-size: 24px;
+  text-align: left;
+  font-weight: normal;
+}
+
+
+.h1 {
+  font-family: 'Telegraf UltraBold 800';
+  font-size: 36px;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  font-weight: bold;
+  text-align: center;
+ 
+}
+
+.para {
+  font-family: 'Telegraf Regular 400';
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.imageContainer1 {
+  width: 50%; 
+  height: 25vh;
+  background-image: url("/image/user.png");
+  background-position: center;
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+
+.imageContainer2 {
+  width: 50%; 
+  height: 25vh;
+  background-image: url("/image/profile.png");
+  background-position: center;
+  background-size: contain; 
+  background-repeat: no-repeat; 
+
+}
+
+.imageContainer3 {
+  width: 50%; 
+  height: 25vh;
+  background-image: url("/image/user6.png");
+  background-position: center;
+  background-size: contain; 
+  background-repeat: no-repeat; 
+
+}
+
+
+/* Existing styles */
+
+/* Add this media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .users {
+    padding-bottom: 65rem; 
+
+  }
+
+  .usersMain {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+      gap: 70px; /* Adjusted gap */
+      padding: 50px; /* Reduced padding */
+  }
+
+  .usersSubSub {
+      padding: 15px; /* Reduced padding */
+      border-radius: 15px; /* Reduced border radius */
+  }
+
+  .cardTop {
+      margin-top: -3.5rem; /* Adjusted margin-top */
+  }
+
+  .usersImage {
+      width: 100px; /* Reduced image size */
+      height: 100px;
+  }
+
+  .cardBottom {
+      margin-top: 15px; /* Adjusted margin-top */
+  }
+
+  .h1 {
+      font-size: 24px; /* Reduced font size */      
+      margin-bottom: 2rem; /* Adjusted margin-bottom */
+  }
+
+  .h2,
+  .h3 {
+      font-size: 18px; /* Reduced font size */
+      text-align: center; /* Center text for mobile */
+  }
+
+  .para {
+      font-size: 14px; /* Reduced font size */
+      line-height: 1.3em; /* Adjusted line height */
+      margin-top: 10px; /* Adjusted margin-top */
+  }
+
+  .imageContainer1,
+  .imageContainer2,
+  .imageContainer3 {
+      width: 100%; /* Adjusted image width */
+      height: 15vh; /* Adjusted image height */
+  }
+}
+
